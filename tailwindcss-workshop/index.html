@@ -5,29 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body> 
-    Your Result
-    76
-    of 100
-  
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-  
-    Summary
-  
-    Reaction
-    80 / 100
-  
-    Memory
-    92 / 100
-  
-    Verbal
-    61 / 100
-  
-    Visual
-    72 / 100
-  
-    Continue
+  <body
+    class="grid place-items-center m-0 p-0 box-border w-screen h-screen bg-white"
+  >
+    <main
+      class="flex flex-col gap-1.5 bg-slate-100 font-sans shadow-2xl md:flex-row md:rounded-2xl"
+    >
+      <div
+        class="flex flex-col place-items-center max-w-md gap-4 rounded-b-3xl p-6 bg-gradient-to-b from-indigo-600 to-indigo-700 text-white md:rounded-2xl"
+      >
+        <h3 class="text-ms font-bold text-slate-300">Your Result</h3>
+        <div
+          class="flex flex-col place-items-center p-7 w-[50%] rounded-full bg-gradient-to-t from-indigo-600 to-indigo-800 gap-2 md:w-[45%]"
+        >
+          <p class="font-bold text-5xl">76</p>
+          <p class="font-bold text-slate-400">of 100</p>
+        </div>
+        <div class="flex flex-col place-items-center gap-3">
+          <h2 class="font-bold text-2xl">Great</h2>
+          <p class="text-center text-slate-400">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
 
+      <div class="flex flex-col bg-white gap-4 p-6 md:w-[70%]">
+        <h3 class="font-bold">Summary</h3>
+        <div class="grid gap-6 text-sm text-blue-950">
+          <div class="flex bg-red-50 p-3.5 rounded-xl">
+            <img src="/assets/images/icon-reaction.svg" alt="Reaction" />
+            <p class="ml-3 text-red-600">Reaction</p>
+            <p class="ml-auto">
+              <span class="font-bold">80</span>
+              <span class="text-slate-500">/ 100</span>
+            </p>
+          </div>
+
+          <div class="flex bg-orange-50 p-3.5 rounded-xl">
+            <img src="/assets/images/icon-memory.svg" alt="" />
+            <p class="ml-3 text-orange-600">Memory</p>
+            <p class="ml-auto">
+              <span class="font-bold">92</span>
+              <span class="text-slate-500">/ 100</span>
+            </p>
+          </div>
+
+          <div class="flex justify-between bg-green-50 p-3.5 rounded-xl">
+            <img src="/assets/images/icon-verbal.svg" alt="Verbal icon" />
+            <p class="ml-3 text-green-600">Verbal</p>
+            <p class="ml-auto">
+              <span class="font-bold">61</span>
+              <span class="text-slate-500">/ 100</span>
+            </p>
+          </div>
+
+          <div class="flex justify-between bg-blue-50 p-3.5 rounded-xl">
+            <img src="/assets/images/icon-visual.svg" alt="eye icon" />
+            <p class="ml-3 text-blue-600">Visual</p>
+            <p class="ml-auto">
+              <span class="font-bold">72</span>
+              <span class="text-slate-500">/ 100</span>
+            </p>
+          </div>
+
+          <a
+            href="#"
+            class="p-3 bg-indigo-950 text-white text-center rounded-full"
+            >Continue</a
+          >
+        </div>
+      </div>
+    </main>
   </body>
 </html>
